@@ -45,7 +45,8 @@ atom-text-editor {
     }
 
     .selection .region {
-      background-color: @syntax-selection-color;
+      // background-color: @syntax-selection-color;
+      background: linear-gradient(to right, @syntax-selection-color 0%, fade(@syntax-selection-color, 70%) 50%, @syntax-selection-color 100%);
     }
 
     .line-number.cursor-line-no-selection,
