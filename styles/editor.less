@@ -1,81 +1,79 @@
 atom-text-editor {
-  background-color: @syntax-background-color;
-  color: @syntax-text-color;
+    background-color: @syntax-background-color;
+    color: @syntax-text-color;
 
-  .invisible-character {
-    color: @syntax-invisible-character-color;
-  }
-
-  .indent-guide {
-    color: @syntax-indent-guide-color;
-  }
-
-  .wrap-guide {
-    background-color: @syntax-wrap-guide-color;
-  }
-
-  .gutter {
-    color: @syntax-gutter-text-color;
-    background: @syntax-gutter-background-color;
-
-    .line-number.cursor-line {
-        background: @syntax-gutter-background-color-selected;
-        font-weight: bold;
-        animation-name: blinking-line-number;
-        animation-duration: 500ms;
-        animation-timing-function: steps(2);
-        animation-iteration-count: infinite;
+    .invisible-character {
+        color: @syntax-invisible-character-color;
     }
-  }
 
-  .gutter .line-number.folded,
-  .gutter .line-number:after,
-  .fold-marker:after {
-    color: #e87b00;
-  }
+    .indent-guide {
+        color: @syntax-indent-guide-color;
+    }
 
-  .invisible {
-    color: #555;
-  }
+    .wrap-guide {
+        background-color: @syntax-wrap-guide-color;
+    }
 
-  .selection .region {
-    background-color: #e1e1e1;
-  }
+    .gutter {
+        color: @syntax-gutter-text-color;
+        background: @syntax-gutter-background-color;
 
-  .bracket-matcher .region {
-    background-color: #C9C9C9;
-    opacity: .7;
-    border-bottom: 0 none;
-  }
+        .line-number.cursor-line {
+            background: @syntax-gutter-background-color-selected;
+            font-weight: bold;
+            animation-name: blinking-line-number;
+            animation-duration: 500ms;
+            animation-timing-function: steps(2);
+            animation-iteration-count: infinite;
+        }
+    }
 
-  &.is-focused {
-    .cursor {
-      border-color: @syntax-cursor-color;
+    .fold-marker:after,
+    .gutter .line-number.folded,
+    .gutter .line-number:after {
+        color: #e87b00;
+    }
+
+    .invisible {
+        color: #555;
     }
 
     .selection .region {
-      // background-color: @syntax-selection-color;
-      background: linear-gradient(to right,
-                                  @syntax-selection-color 0%,
-                                  fade(@syntax-selection-color, 50%) 50%,
-                                  @syntax-selection-color 100%);
+        background-color: #e1e1e1;
     }
 
-    .line-number.cursor-line-no-selection {
-        background: darken(@syntax-gutter-background-color-selected, 10%);
+    .bracket-matcher .region {
+        background-color: #C9C9C9;
+        opacity: 0.7;
+        border-bottom: 0 none;
     }
-    .line.cursor-line {
-      background: linear-gradient(to right,
-                                  @syntax-gutter-background-color-selected 0%,
-                                  fade(@syntax-gutter-background-color-selected, 50%) 10%,
-                                  fade(@syntax-gutter-background-color-selected, 50%) 80%,
-                                  @syntax-gutter-background-color-selected 100%);
-      //@syntax-gutter-background-color-selected;
+
+    &.is-focused {
+        .cursor {
+            border-color: @syntax-cursor-color;
+        }
+
+        .selection .region {
+            // background-color: @syntax-selection-color;
+            background: linear-gradient(to right, @syntax-selection-color 0%, fade(@syntax-selection-color, 50%) 50%, @syntax-selection-color 100%);
+        }
+
+        .line-number.cursor-line-no-selection {
+            background: darken(@syntax-gutter-background-color-selected, 10%);
+        }
+
+        .line.cursor-line {
+            background: linear-gradient(to right, @syntax-gutter-background-color-selected 0%, fade(@syntax-gutter-background-color-selected, 50%) 10%, fade(@syntax-gutter-background-color-selected, 50%) 80%, @syntax-gutter-background-color-selected 100%);
+            //@syntax-gutter-background-color-selected;
+        }
     }
-  }
 }
-
 @keyframes blinking-line-number {
-    0% {color: darken(@syntax-gutter-background-color, 45%);}
-    100% {color: darken(@syntax-gutter-background-color, 100%);}
+    0% {
+        color: darken(@syntax-gutter-background-color, 45%);
+    }
+
+    100% {
+        color: darken(@syntax-gutter-background-color, 100%);
+    }
 }
