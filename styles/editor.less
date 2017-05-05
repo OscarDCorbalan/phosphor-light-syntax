@@ -51,7 +51,12 @@ atom-text-editor {
 
     .line-number.cursor-line-no-selection,
     .line.cursor-line {
-      background-color: @syntax-gutter-background-color-selected;
+      background: linear-gradient(to right,
+                                  @syntax-gutter-background-color-selected 0%,
+                                  fade(@syntax-gutter-background-color-selected, 50%) 10%,
+                                  fade(@syntax-gutter-background-color-selected, 50%) 80%,
+                                  @syntax-gutter-background-color-selected 100%);
+      //@syntax-gutter-background-color-selected;
     }
   }
 }
