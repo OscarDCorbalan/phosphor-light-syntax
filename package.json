@@ -1,7 +1,7 @@
 {
   "name": "phosphor-light-syntax",
   "theme": "syntax",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "Stop programming in a boring IDE ASAP. Phosphor-light is a light syntax theme for Atom, with phosphorite line and word highlights, colorful gradients and rainbow-pony effects.",
   "keywords": [
     "syntax",

@@ -17,6 +17,14 @@ atom-text-editor {
   .gutter {
     color: @syntax-gutter-text-color;
     background: @syntax-gutter-background-color;
+
+    .line-number.cursor-line {
+        font-weight: bold;
+        animation-name: blinking-line-number;
+        animation-duration: 500ms;
+        animation-timing-function: steps(2);
+        animation-iteration-count: infinite;
+    }
   }
 
   .gutter .line-number.folded,
@@ -46,7 +54,10 @@ atom-text-editor {
 
     .selection .region {
       // background-color: @syntax-selection-color;
-      background: linear-gradient(to right, @syntax-selection-color 0%, fade(@syntax-selection-color, 70%) 50%, @syntax-selection-color 100%);
+      background: linear-gradient(to right,
+                                  @syntax-selection-color 0%,
+                                  fade(@syntax-selection-color, 50%) 50%,
+                                  @syntax-selection-color 100%);
     }
 
     .line-number.cursor-line-no-selection {
@@ -61,4 +72,9 @@ atom-text-editor {
       //@syntax-gutter-background-color-selected;
     }
   }
+}
+
+@keyframes blinking-line-number {
+    0% {color: darken(@syntax-gutter-background-color, 45%);}
+    100% {color: darken(@syntax-gutter-background-color, 100%);}
 }
