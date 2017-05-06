@@ -80,12 +80,14 @@ atom-text-editor {
             background: @syntax-highlight-word-background-color;
             animation-name: effect-word-selected;
             animation-duration: 300ms;
-            animation-repeat: 5s;
             transform-origin: 50%;
         }
 
         .highlight.selection .region {
             background: @syntax-selection-color;
+            animation-name: effect-line-selected;
+            animation-duration: 600ms;
+            transform-origin: 0 50%;
         }
 
         .highlight.bracket-matcher .region.bracket-matcher {
@@ -100,6 +102,15 @@ atom-text-editor {
 
     100% {
         color: darken(@syntax-gutter-background-color, 100%);
+    }
+}
+@keyframes effect-line-selected {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
     }
 }
 @keyframes effect-word-selected {
