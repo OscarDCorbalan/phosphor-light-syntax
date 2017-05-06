@@ -1,4 +1,4 @@
-# Phosphor Light Syntax theme
+# (BETA) Phosphor Light Syntax theme
 
 Phosphor is the definitive Atom theme for hardcore programmers that spend the day in hardcore projects, between millions of lines of code, and need an IDE that helps them maintain focus.
 
@@ -12,5 +12,5 @@ Phosphor Light Syntax comes with light backgrounds and 172,43% more phosphorite 
 ## Requirements
 
   * highlight-selected package
- 
+
 ![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)

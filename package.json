@@ -1,8 +1,8 @@
 {
     "name": "phosphor-light-syntax",
     "theme": "syntax",
-    "version": "0.9.2",
-    "description": "Phosphor is the definitive Atom theme for hardcore programmers that spend the day in hardcore projects, between millions of lines of code, and need an IDE that helps them maintain focus.",
+    "version": "0.9.4",
+    "description": "(theme in beta) Phosphor is the definitive Atom theme for hardcore programmers that spend the day in hardcore projects, between millions of lines of code, and need an IDE that helps them maintain focus.",
     "keywords": [
         "syntax",
         "theme",
