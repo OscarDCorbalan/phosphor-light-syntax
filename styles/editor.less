@@ -69,16 +69,23 @@ atom-text-editor {
     }
 
     .highlights {
-        .highlight-selected.light-theme .region {
-            border-bottom: 2px solid darken(@syntax-highlight-background-color, 33%);
+
+        .highlight.highlight-selected.light-theme .region {
+            // Hightlight words from 'highlight-selected' package
+            border-bottom: 1px solid darken(@syntax-highlight-background-color, 33%);
             border-top: initial;
             border-left: initial;
             border-right: initial;
             border-radius: 4px 4px 3px 3px;
         }
+        .highlight.highlight-selected.light-theme .region {
+            // Hightlight words from 'highlight-selected' package
+            //border-bottom: 2px solid darken(@syntax-highlight-word-background-color, 33%);
+            background: @syntax-highlight-word-background-color;
+        }
+
         .highlight.selection .region {
-            background: fade(@syntax-highlight-background-color, 50%);
-            border-radius: 4px 4px 3px 3px;
+            background: @syntax-highlight-background-color;
         }
         .highlight.bracket-matcher .region.bracket-matcher {
             background: @syntax-highlight-bracket-background-color;

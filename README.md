@@ -9,4 +9,8 @@ With Phosphor, you will...:
 
 Phosphor Light Syntax comes with light backgrounds and 172,43% more phosphorite line highlights, super garish colors for marked words, the coolest color gradients and special effects that would be the dream of a rainbow maned pony.
 
+## Requirements
+
+  * highlight-selected package
+ 
 ![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
