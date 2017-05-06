@@ -6,7 +6,12 @@
   "keywords": [
     "syntax",
     "theme",
-    "phosphor"
+    "phosphor",
+    "light",
+    "phosphorite",
+    "animation",
+    "effects",
+    "hardcore"
   ],
   "repository": "https://github.com/OscarDCorbalan/phosphor-light-syntax",
   "license": "MIT",
