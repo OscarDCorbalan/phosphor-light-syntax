@@ -69,12 +69,12 @@ atom-text-editor {
     }
 
     .highlights {
-
         .highlight.highlight-selected.light-theme .region {
             // Remove word borders from 'highlight-selected' package
             border: initial;
             border-radius: 0;
         }
+
         .highlight.highlight-selected.light-theme .region {
             // Re-color hightlighted words from 'highlight-selected' package
             background: @syntax-highlight-word-background-color;
@@ -87,13 +87,12 @@ atom-text-editor {
         .highlight.selection .region {
             background: @syntax-selection-color;
         }
+
         .highlight.bracket-matcher .region.bracket-matcher {
             background: @syntax-highlight-bracket-background-color;
         }
-
     }
 }
-
 @keyframes blinking-line-number {
     0% {
         color: darken(@syntax-gutter-background-color, 50%);
