@@ -11,7 +11,9 @@ Phosphor Light Syntax comes with light backgrounds and 172,43% more phosphorite 
 
 ## Requirements
 
-  * highlight-selected package
+  * Please install the [highlight-selected](https://atom.io/packages/highlight-selected) plugin
+
+## Screenshots
 
 ![Phosphor-light line highlight](http://res.cloudinary.com/oscardc/image/upload/q_auto/v1494083757/phosphor/syntax/phosphor-line-highlight.gif)
 ![Phosphor-light word highlight](http://res.cloudinary.com/oscardc/image/upload/q_auto/v1494083757/phosphor/syntax/phosphor-word-highlight.gif)
