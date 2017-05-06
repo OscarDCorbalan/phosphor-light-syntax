@@ -67,10 +67,28 @@ atom-text-editor {
             //@syntax-gutter-background-color-selected;
         }
     }
+
+    .highlights {
+        .highlight-selected.light-theme .region {
+            border-bottom: 2px solid darken(@syntax-highlight-background-color, 33%);
+            border-top: initial;
+            border-left: initial;
+            border-right: initial;
+            border-radius: 4px 4px 3px 3px;
+        }
+        .highlight.selection .region {
+            background: fade(@syntax-highlight-background-color, 50%);
+            border-radius: 4px 4px 3px 3px;
+        }
+        .highlight.bracket-matcher .region.bracket-matcher {
+            background: @syntax-highlight-bracket-background-color;
+        }
+
+    }
 }
 @keyframes blinking-line-number {
     0% {
-        color: darken(@syntax-gutter-background-color, 45%);
+        color: darken(@syntax-gutter-background-color, 50%);
     }
 
     100% {
