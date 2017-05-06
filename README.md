@@ -13,4 +13,6 @@ Phosphor Light Syntax comes with light backgrounds and 172,43% more phosphorite 
 
   * highlight-selected package
 
-![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
+![Phosphor-light line highlight](http://res.cloudinary.com/oscardc/image/upload/q_auto/v1494083757/phosphor/syntax/phosphor-line-highlight.gif)
+![Phosphor-light word highlight](http://res.cloudinary.com/oscardc/image/upload/q_auto/v1494083757/phosphor/syntax/phosphor-word-highlight.gif)
+![Phosphor-light text highlight](http://res.cloudinary.com/oscardc/image/upload/q_auto/v1494083757/phosphor/syntax/phosphor-text-highlight.gif)
