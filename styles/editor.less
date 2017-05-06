@@ -78,6 +78,10 @@ atom-text-editor {
         .highlight.highlight-selected.light-theme .region {
             // Re-color hightlighted words from 'highlight-selected' package
             background: @syntax-highlight-word-background-color;
+            animation-name: effect-word-selected;
+            animation-duration: 300ms;
+            animation-repeat: 5s;
+            transform-origin: 50%;
         }
 
         .highlight.selection .region {
@@ -89,6 +93,7 @@ atom-text-editor {
 
     }
 }
+
 @keyframes blinking-line-number {
     0% {
         color: darken(@syntax-gutter-background-color, 50%);
@@ -96,5 +101,16 @@ atom-text-editor {
 
     100% {
         color: darken(@syntax-gutter-background-color, 100%);
+    }
+}
+@keyframes effect-word-selected {
+    0% {
+        opacity: 0.33;
+        transform: scale(0.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
     }
 }
