@@ -11,7 +11,7 @@ Phosphor Light Syntax comes with light backgrounds and 172,43% more phosphorite 
 
 ## Requirements
 
-  * Please install the [highlight-selected](https://atom.io/packages/highlight-selected) plugin
+  * Please install the [highlight-selected plugin](https://atom.io/packages/highlight-selected)
 
 ## Screenshots
 
