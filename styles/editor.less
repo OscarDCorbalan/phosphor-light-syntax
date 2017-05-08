@@ -69,8 +69,16 @@ atom-text-editor {
     }
 
     .line {
-        .syntax--entity.syntax--function{
-            font-weight: bold;            
+        .syntax--entity.syntax--function {
+            color: @syntax-color-function;
+            background-color: fade(@syntax-color-function, 0%);
+            font-weight: bold;
+            transition: color 200ms, background-color 200ms;
+            &:hover {
+                background-color: fade(@syntax-color-function, 90%);
+                color: #fff;
+                transition-duration: 300ms;
+            }
         }
     }
     .highlights {
