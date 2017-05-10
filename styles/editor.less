@@ -71,6 +71,7 @@ atom-text-editor {
     .line {
         /* common transition config for hovers */
         .syntax--variable.syntax--parameter,
+        .syntax--type.syntax--var,
         .syntax--keyword,
         .syntax--entity.syntax--function {
             transition: color 200ms, background-color 200ms;
@@ -87,8 +88,10 @@ atom-text-editor {
                 background-color: fade(@syntax-color-function-parameter, 70%);
             }
         }
+        .syntax--type.syntax--var,
         .syntax--keyword {
             background-color: fade(@syntax-color-keyword, 0%);
+            font-weight: bold;
             &:hover {
                 background-color: fade(@syntax-color-keyword, 70%);
             }
