@@ -69,21 +69,34 @@ atom-text-editor {
     }
 
     .line {
+        /* common transition config for hovers */
+        .syntax--variable.syntax--parameter,
+        .syntax--keyword,
+        .syntax--entity.syntax--function {
+            transition: color 200ms, background-color 200ms;
+            &:hover {
+                transition-duration: 300ms;
+                color: #fff;
+            }
+        }
+        .syntax--variable.syntax--parameter {
+            font-style: italic;
+            color: @syntax-color-function-parameter;
+            background-color: fade(@syntax-color-function-parameter, 0%);
+            &:hover {
+                background-color: fade(@syntax-color-function-parameter, 90%);
+            }
+        }
         .syntax--keyword {
-        background-color: fade(@syntax-color-keyword, 0%);
-        transition: color 200ms, background-color 200ms;
+            background-color: fade(@syntax-color-keyword, 0%);
             &:hover {
                 background-color: fade(@syntax-color-keyword, 90%);
-                color: #fff;
-                transition-duration: 300ms;
             }
-
         }
         .syntax--entity.syntax--function {
             color: @syntax-color-function;
             background-color: fade(@syntax-color-function, 0%);
             font-weight: bold;
-            transition: color 200ms, background-color 200ms;
             &:hover {
                 background-color: fade(@syntax-color-function, 90%);
                 color: #fff;
