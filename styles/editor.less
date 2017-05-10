@@ -69,6 +69,16 @@ atom-text-editor {
     }
 
     .line {
+        .syntax--keyword {
+        background-color: fade(@syntax-color-keyword, 0%);
+        transition: color 200ms, background-color 200ms;
+            &:hover {
+                background-color: fade(@syntax-color-keyword, 90%);
+                color: #fff;
+                transition-duration: 300ms;
+            }
+
+        }
         .syntax--entity.syntax--function {
             color: @syntax-color-function;
             background-color: fade(@syntax-color-function, 0%);
