@@ -80,6 +80,7 @@ atom-text-editor {
                 color: #fff;
             }
         }
+
         .syntax--variable.syntax--parameter {
             font-style: italic;
             color: @syntax-color-function-parameter;
@@ -88,6 +89,7 @@ atom-text-editor {
                 background-color: fade(@syntax-color-function-parameter, 70%);
             }
         }
+
         .syntax--type.syntax--var,
         .syntax--keyword {
             background-color: fade(@syntax-color-keyword, 0%);
@@ -96,6 +98,7 @@ atom-text-editor {
                 background-color: fade(@syntax-color-keyword, 70%);
             }
         }
+
         .syntax--entity.syntax--function {
             color: @syntax-color-function;
             background-color: fade(@syntax-color-function, 0%);
@@ -105,6 +108,11 @@ atom-text-editor {
                 color: #fff;
                 transition-duration: 300ms;
             }
+        }
+
+        .syntax--method-call .syntax--function {
+            color: @syntax-color-function;
+            /*@syntax-color-function-call;*/
         }
     }
     .highlights {
